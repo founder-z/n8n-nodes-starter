@@ -1,0 +1,61 @@
+{
+  "name": "@founder-z/n8n-nodes-starter",
+  "version": "0.1.0",
+  "description": "Example starter module for custom n8n nodes.",
+  "homepage": "https://n8n.io",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watch",
+    "build": "tsc && gulp",
+    "prepare": "husky install",
+    "tslint": "tslint -p tsconfig.json -c tslint.json",
+    "watch": "tsc --watch",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "pot": "dist/translations.pot",
+  "n8n": {
+    "nodes": [
+      "dist/nodes/Example/Example.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/ExampleApi.credentials.js"
+    ]
+  },
+  "devDependencies": {
+    "@founder-z/jidoca-tools": "^1.1.1",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.28",
+    "@types/request-promise-native": "^1.0.17",
+    "gulp": "^4.0.2",
+    "husky": "^5.1.3",
+    "jest": "^26.6.3",
+    "n8n-workflow": "^0.52.0",
+    "ts-jest": "^26.5.1",
+    "tslint": "^5.20.1",
+    "typescript": "~4.1.5"
+  },
+  "dependencies": {
+    "n8n-core": "^0.63.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testURL": "http://localhost/",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testPathIgnorePatterns": [
+      "/dist/",
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}

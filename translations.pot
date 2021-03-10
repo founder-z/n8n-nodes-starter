@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: jidoca-tools\n"
+"Project-Id-Version: \n"
+
+#: @founder-z/n8n-nodes-starter: dist/nodes/Example/Example.node.js
+msgid "Basic Example"
+msgstr ""
+
+#: @founder-z/n8n-nodes-starter: dist/nodes/Example/Example.node.js
+msgid "My String"
+msgstr ""
+
+#: @founder-z/n8n-nodes-starter: dist/nodes/Example/Example.node.js
+msgid "The description text"
+msgstr ""
+
+#: @founder-z/n8n-nodes-starter: dist/nodes/Example/Example.node.js
+msgid "Placeholder value"
+msgstr ""
+
+#: @founder-z/n8n-nodes-starter: dist/credentials/ExampleApi.credentials.js
+msgid "API key"
+msgstr ""
+
+#: @founder-z/n8n-nodes-starter: dist/credentials/ExampleApi.credentials.js
+msgid "Description of how to get the key"
+msgstr ""
